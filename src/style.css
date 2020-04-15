@@ -32,6 +32,7 @@ body {
     color: white;
 }
 .nav-item {
+    text-decoration: none;
     display: block;
     padding: 1em;
     font-size: 16pt;
@@ -39,6 +40,10 @@ body {
     text-decoration: none;
     margin-top: 2em;
     margin-left: 3em;
+}
+.nav-item a {
+    text-decoration: none;
+    color: white;
 }
 .site-wrap {
     display: flex;
