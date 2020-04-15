@@ -4,6 +4,7 @@
     transition: 0.3s;
     border-radius: 5px;
     width:50%;
+    height:50%;
     flex: 0px;
   }
   
@@ -14,12 +15,13 @@
   
   /* Add some padding inside the card container */
   .per_container {
-    padding: 2px 16px;
+    padding: 20px 16px;
   }
 
   .per_img {
     border-radius: 5px 5px 0 0;
-   
+    height:150px;
+    width:100%;
   }
 
   .global  {
@@ -29,5 +31,10 @@
     margin-right: 22em;
 }
 
+.personal_wrapper {
+  display:flex;
+  justify-content: center;
+  flex-flow: row wrap;
+}
 
 
