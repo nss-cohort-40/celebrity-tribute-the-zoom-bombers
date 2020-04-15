@@ -154,13 +154,21 @@ label[for="nav-trigger"] {
     padding: 0;
 }
 .news-feed .content-right li {
-    font-size: 14pt;
+    font-size: 12pt;
     display: flex;
     align-items: center;
-    padding: 0.5em;
+    padding: 10px;
 }
 .news-feed .content-right img {
     width: 30%;
+}
+.news-feed .content-right .type {
+    display: flex;
+    justify-content: center;
+    background-color:whitesmoke ;
+    border-radius: 1em;
+    margin-left: 5px;
+    margin-right: 10px;
 }
 .news-feed .content-textbox {
     border: 1px black solid;
