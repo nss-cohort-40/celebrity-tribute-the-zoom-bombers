@@ -27,6 +27,10 @@ body {
     left: 0;
     z-index: 0;
 }
+.nav-item a {
+    text-decoration: none;
+    color: white;
+}
 .nav-item {
     text-decoration: none;
     display: block;
@@ -48,7 +52,7 @@ body {
     min-height: 100%;
     /* background-image: url(https://s3-eu-central-1.amazonaws.com/centaur-wp/creativereview/prod/content/uploads/2015/11/Blackstar-grid.png);
     background-repeat: repeat-y; */
-    background-color: #fff;
+    background-color: rgb(244, 242, 242);
     position: relative;
     top: 0;
     bottom: 100%;
@@ -83,13 +87,107 @@ label[for="nav-trigger"] {
 .nav-trigger + label, .site-wrap {
     transition: left 0.2s;
 }
-/* Example content for page-name class container*/
-.page-name {
+.news-feed {
+    width: 40em;
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: center;
+}
+.news-feed .wrapper {
     display: flex;
     flex-flow: column wrap;
     justify-content: center;
     align-items: center;
+    margin-bottom: 10em;
 }
-.page-name .container {
-    width: 60em;
+.news-feed .line {
+    height: 1em;
+    width: 100%;
+    border-radius: 1em;
+    background-color: black;
+}
+.news-feed .container-first {
+    display: flex;
+    flex-flow: row wrap;
+    margin-top: 1em;
+    margin-bottom: 0.5em;
+    border-radius: 1em;
+    height: 26em;
+}
+.news-feed .container-first img {
+    width: 100%;
+    height: 100%;
+    border-radius: 1em;
+}
+.news-feed .container {
+    display: flex;
+    flex-flow: row wrap;
+    margin-top: 0.5em;
+    margin-bottom: 0.5em;
+    border-radius: 1em;
+    height: 26em;
+}
+.news-feed .container img {
+    width: 100%;
+    height: 100%;
+    border-radius: 1em;
+}
+.news-feed .line-vertical {
+    width: 1em;
+    height: 5em;
+    border-radius: 1em;
+    background-color: rgb(0, 0, 0);
+}
+.news-feed .content-container {
+    border-radius: 1em;
+    width: 80%;
+    height: 65%;
+    background-color: gray;
+}
+.news-feed .content-right {
+    border: 1px solid black;
+    border-radius: 1em;
+    width: 19%;
+    background-color: white;
+}
+.news-feed .content-right ul {
+    display: flex;
+    flex-flow: column wrap;
+    align-items: left;
+    list-style: none;
+    justify-content: space-around;
+    padding: 0;
+}
+.news-feed .content-right li {
+    text-decoration: none;
+    font-size: 12pt;
+    display: flex;
+    align-items: center;
+    padding: 10px;
+}
+.news-feed .content-right img {
+    width: 60%;
+}
+.news-feed .content-right .type {
+    display: flex;
+    justify-content: center;
+    background-color:whitesmoke ;
+    border-radius: 1em;
+    margin-left: 5px;
+    margin-right: 10px;
+}
+.news-feed .content-textbox {
+    border: 1px black solid;
+    border-radius: 1em;
+    width: 100%;
+    height: 35%;
+    background-color: white
+}
+.news-feed .content-textbox p {
+    margin: 1em;
+    font-size: 14pt;
+}
+.news-feed .content-textbox .hashes {
+    margin: 1em;
+    font-size: 14pt;
 }
