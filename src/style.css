@@ -47,7 +47,7 @@ body {
     min-height: 100%;
     /* background-image: url(https://s3-eu-central-1.amazonaws.com/centaur-wp/creativereview/prod/content/uploads/2015/11/Blackstar-grid.png);
     background-repeat: repeat-y; */
-    background-color: #fff;
+    background-color: rgb(244, 242, 242);
     position: relative;
     top: 0;
     bottom: 100%;
@@ -106,8 +106,12 @@ label[for="nav-trigger"] {
     margin-top: 1em;
     margin-bottom: 0.5em;
     border-radius: 1em;
-    height: 25em;
-    background-color: black;
+    height: 26em;
+}
+.news-feed .container-first img {
+    width: 100%;
+    height: 100%;
+    border-radius: 1em;
 }
 .news-feed .container {
     display: flex;
@@ -115,14 +119,18 @@ label[for="nav-trigger"] {
     margin-top: 0.5em;
     margin-bottom: 0.5em;
     border-radius: 1em;
-    height: 25em;
-    background-color: black;
+    height: 26em;
+}
+.news-feed .container img {
+    width: 100%;
+    height: 100%;
+    border-radius: 1em;
 }
 .news-feed .line-vertical {
     width: 1em;
     height: 5em;
     border-radius: 1em;
-    background-color: black;
+    background-color: rgb(0, 0, 0);
 }
 .news-feed .content-container {
     border-radius: 1em;
@@ -131,14 +139,40 @@ label[for="nav-trigger"] {
     background-color: gray;
 }
 .news-feed .content-right {
+    border: 1px solid black;
     border-radius: 1em;
-    width: 20%;
-    height: 65%;
-    background-color: rgb(191, 191, 191);
+    width: 19%;
+    background-color: white;
+}
+.news-feed .content-right ul {
+    display: flex;
+    flex-flow: column wrap;
+    align-items: left;
+    list-style: none;
+    justify-content: space-around;
+    padding: 0;
+}
+.news-feed .content-right li {
+    font-size: 14pt;
+    display: flex;
+    align-items: center;
+    padding: 0.5em;
+}
+.news-feed .content-right img {
+    width: 30%;
 }
 .news-feed .content-textbox {
+    border: 1px black solid;
     border-radius: 1em;
     width: 100%;
     height: 35%;
-    background-color: rgb(87, 87, 87);
+    background-color: white
+}
+.news-feed .content-textbox p{
+    margin: 1em;
+    font-size: 14pt;
+}
+.news-feed .content-textbox .hashes {
+    margin: 1em;
+    font-size: 14pt;
 }
