@@ -1,80 +1,144 @@
+
+/* Quick Color Palet Access */
+/* (PINKISH) background-color: rgba(199, 161, 139, 1.4);  */
+/* (DeepGray) background-color:rgba(127,146, 164, 1.4); */
+
 .global {
     font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
     margin-top: 6em;
     margin-left: 22em;
     margin-right: 22em;
 }
-.executiveSummary h1 {
-    font-size: 3vw;
+
+
+/* This divides all major sections with an underline and shadow */
+.executiveSum--underline {
     border-bottom: 4px solid black;
     box-shadow: 0 10px 6px -6px #777;
 }
-
-* {
-    box-sizing: border-box;
-  }
-
-.rowExSum {
-    display: flex;
+/* This gives universal bakground color and margin */
+.executiveSum--margin {
+    background-color: whitesmoke;
+    width: 40em;
 }
-
-.column {
-    flex: 1;
-    padding: 1em;
-    /* border: 1px solid black; */
+/* This is the David Bowie intro Box */
+div.exSum__img {
+    float: left;
+    width: 48%; 
 }
-
-
-.exSum--margin {
-    margin-left: 22em;
-    margin-right: 22em;    
-}
-
-.exSum__img {
-    text-align: center;
-}
-.exSum__img--color {
-    /* background-color: rgba(127,146, 164, .4);  */
-   
-}
-.exSum__img img {
+img.exSum__img {
     max-width: 100%;
     height: auto;
-    
 }
-
-.exSum__alias_colab {
-    /* border: 5px solid black; */
+/* These are the commands for Floating the Intro Section */
+.container {
+    position: relative;
+    text-align: center;  
 }
-.exSum__alias {
-    display: flex;
-    /* background-color: rgba(199, 161, 139, 1.4); */
-    background-color: rgba(127,146, 164, 0.4);
+div.centeredAlias {
+    position: absolute;
+    top: 84%;
+    left: 41%;  
+}
+div.centeredColab {
+    position: absolute;
+    top: 89%;
+    left: 33%;
+}
+/* This is the Aliases Box Info */
+div.exSum__alias {
+    float:right;
     margin-bottom: 5px;
+    background-color: rgba(127,146, 164, 0.4);
+    width: 48%;
+    /* background-color: rgba(199, 161, 139, 1.4); */
 }
-.exSum__alias img {
-    max-width: 50%;
+img.exSum__alias {
+    max-width: 75%;
     height: auto;
     margin: 1em;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
 }
-.exSum__alias h2 {
-    
-
+h2.exSum__alias {
+    font-size: 10px;
 }
-.exSum__alias ul {
-
-}
-
-.exSum--colab {
-    display: flex;
-    /* background-color: rgba(148, 140, 133, 1.4); */
+/* This is the Colaboration box into */
+div.exSum__colab {
+    float: right;
+    width: 48%;
     margin-top: 5px;
+    /* background-color: rgba(148, 140, 133, 1.4); */
     /* background-color: rgba(127,146, 164, 1.4) */
-    background-color: rgba(91, 93, 95, 0.4);
+    /* background-color: rgba(91, 93, 95, 0.4); */
+    background-color: rgba(199, 161, 139, 0.4);
 }
-.exSum--colab img {
-    max-width: 50%;
+img.exSum__colab{
+    max-width: 82%;
     height: auto;
     margin: 1em;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+h2.exSum__colab {
+    font-size: 10px;
 }
 
+/* This to Stop the Float formated header  */
+.executiveSum--clearfix {
+    clear: both;
+}
+
+/* This is where I started using Flexbox for Rows in Aliases Section */
+.exSum__aliases_bigBox {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    /* justify-content: space-between; */
+}
+
+.aliases_one {
+    display: flex;
+    justify-content: space-between;
+    /* background-color: rgba(91, 93, 95, 0.4);
+    border: 2px solid black; */
+    margin-bottom: 1em;
+}
+.aliases_one div {
+    background-color: rgba(91, 93, 95, 0.4);
+    /* border: 2px solid black; */
+    margin: 1em;
+
+}
+
+.aliases_two {
+    display: flex;
+    justify-content: ;
+    margin-bottom: 1em;
+}
+
+.aliases_two div {
+    background-color: rgba(91, 93, 95, 0.4);
+    border: 2px solid black;
+    margin: 1em;
+    padding: 1em;
+}
+
+
+img.exSum__aliases_ziggyStardust {
+    max-width: 60%
+}
+img.exSum__aliases_aladdinSane {
+    max-width: 20%
+}
+img.exSum__aliases_theThinWhiteDuke {
+    max-width: 20%
+}
+img.exSum__aliases_theGoblinKing {
+    max-width: 20%
+}
+img.exSum__aliases_theBlindProphet {
+    max-width: 20%
+}
