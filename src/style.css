@@ -10,28 +10,13 @@
     box-shadow: 0 10px 6px -6px #777;
 }
 
-body {
-    /* background-color: rgba(127,146, 164, 1.4) */
-    /* background-color: rgba(148, 140, 133, 1.4); */
-}
-
 * {
     box-sizing: border-box;
   }
-/* .row:after {
-        content: "";
-        display: table;
-        clear: both;;
-} */
-.row {
+
+.rowExSum {
     display: flex;
 }
-/* .column {
-    float: left;
-    width: 50%;
-    padding: 5px;
-    height: 300px;
-} */
 
 .column {
     flex: 1;
