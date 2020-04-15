@@ -154,13 +154,14 @@ label[for="nav-trigger"] {
     padding: 0;
 }
 .news-feed .content-right li {
+    text-decoration: none;
     font-size: 12pt;
     display: flex;
     align-items: center;
     padding: 10px;
 }
 .news-feed .content-right img {
-    width: 30%;
+    width: 60%;
 }
 .news-feed .content-right .type {
     display: flex;
@@ -177,7 +178,7 @@ label[for="nav-trigger"] {
     height: 35%;
     background-color: white
 }
-.news-feed .content-textbox p{
+.news-feed .content-textbox p {
     margin: 1em;
     font-size: 14pt;
 }
