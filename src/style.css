@@ -4,3 +4,45 @@
     margin-left: 22em;
     margin-right: 22em;
 }
+.footer {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    background-color: red;
+    color: white;
+    text-align: center;
+  }
+  footer {
+    background-image: linear-gradient(to right, rgba(217, 154, 197, 0.452), rgba(108, 211, 255, 0.507)), url(https://cuziloveyou.lizzomusic.com/sites/g/files/g2000008501/files/CILY_cutout.png);
+    background-position: 0, center bottom;
+    background-size: cover, 400px;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    padding: 0;
+    height: 420px;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    position: relative;
+    margin-top: 100px;
+}
+
+footer .links {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding-top: 5px;
+}
+
+footer img {
+    width: 40px;
+    height: 40px;
+}
+
+footer .copyright {
+    display: flex;
+    justify-content: center;
+    margin-top: 1em;
+    color: #D9DBF1;
+}
