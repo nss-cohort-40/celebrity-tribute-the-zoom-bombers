@@ -27,6 +27,10 @@ body {
     left: 0;
     z-index: 0;
 }
+.nav-item a {
+    text-decoration: none;
+    color: white;
+}
 .nav-item {
     display: block;
     padding: 1em;
@@ -84,7 +88,7 @@ label[for="nav-trigger"] {
     flex-flow: column wrap;
     justify-content: center;
 }
-.news-feed .line {
+.news-feed_line {
     height: 1em;
     width: 100%;
     border-radius: 1em;
@@ -108,7 +112,7 @@ label[for="nav-trigger"] {
     height: 25em;
     background-color: black;
 }
-.news-feed .container-test {
+.news-feed_wrapper {
     display: flex;
     flex-flow: column wrap;
     justify-content: center;
