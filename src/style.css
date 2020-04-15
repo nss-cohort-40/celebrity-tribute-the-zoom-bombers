@@ -4,3 +4,92 @@
     margin-left: 22em;
     margin-right: 22em;
 }
+.executiveSummary h1 {
+    font-size: 3vw;
+    border-bottom: 4px solid black;
+    box-shadow: 0 10px 6px -6px #777;
+}
+
+body {
+    /* background-color: rgba(127,146, 164, 1.4) */
+    /* background-color: rgba(148, 140, 133, 1.4); */
+}
+
+* {
+    box-sizing: border-box;
+  }
+/* .row:after {
+        content: "";
+        display: table;
+        clear: both;;
+} */
+.row {
+    display: flex;
+}
+/* .column {
+    float: left;
+    width: 50%;
+    padding: 5px;
+    height: 300px;
+} */
+
+.column {
+    flex: 1;
+    padding: 1em;
+    /* border: 1px solid black; */
+}
+
+
+.exSum--margin {
+    margin-left: 22em;
+    margin-right: 22em;    
+}
+
+.exSum__img {
+    text-align: center;
+}
+.exSum__img--color {
+    /* background-color: rgba(127,146, 164, .4);  */
+   
+}
+.exSum__img img {
+    max-width: 100%;
+    height: auto;
+    
+}
+
+.exSum__alias_colab {
+    /* border: 5px solid black; */
+}
+.exSum__alias {
+    display: flex;
+    /* background-color: rgba(199, 161, 139, 1.4); */
+    background-color: rgba(127,146, 164, 0.4);
+    margin-bottom: 5px;
+}
+.exSum__alias img {
+    max-width: 50%;
+    height: auto;
+    margin: 1em;
+}
+.exSum__alias h2 {
+    
+
+}
+.exSum__alias ul {
+
+}
+
+.exSum--colab {
+    display: flex;
+    /* background-color: rgba(148, 140, 133, 1.4); */
+    margin-top: 5px;
+    /* background-color: rgba(127,146, 164, 1.4) */
+    background-color: rgba(91, 93, 95, 0.4);
+}
+.exSum--colab img {
+    max-width: 50%;
+    height: auto;
+    margin: 1em;
+}
+
