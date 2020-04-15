@@ -93,6 +93,7 @@ label[for="nav-trigger"] {
     flex-flow: column wrap;
     justify-content: center;
     align-items: center;
+    margin-bottom: 10em;
 }
 .news-feed .line {
     height: 1em;
