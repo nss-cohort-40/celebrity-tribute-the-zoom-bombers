@@ -88,7 +88,13 @@ label[for="nav-trigger"] {
     flex-flow: column wrap;
     justify-content: center;
 }
-.news-feed_line {
+.news-feed .wrapper {
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: center;
+    align-items: center;
+}
+.news-feed .line {
     height: 1em;
     width: 100%;
     border-radius: 1em;
@@ -111,12 +117,6 @@ label[for="nav-trigger"] {
     border-radius: 1em;
     height: 25em;
     background-color: black;
-}
-.news-feed_wrapper {
-    display: flex;
-    flex-flow: column wrap;
-    justify-content: center;
-    align-items: center;
 }
 .news-feed .line-vertical {
     width: 1em;
