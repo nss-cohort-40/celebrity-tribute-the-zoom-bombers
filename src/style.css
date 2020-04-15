@@ -340,7 +340,11 @@ label[for="nav-trigger"] {
     width:50em;
     height:50em;
     flex: 0px;
+    text-align: center;
+    flex-shrink: inherit;
   }
+
+  
   
   /* On mouse-over, add a deeper shadow */
   .per_card:hover {
@@ -349,21 +353,25 @@ label[for="nav-trigger"] {
   
   /* Add some padding inside the card container */
   .per_container {
-    padding: 20px 16px;
+    padding: 40px 20px;
+    height: 100%;
+    width: 80%;
+    text-align: center;
   }
 
   .per_img {
-    border-radius: 5px 5px 0 0;
-    height:100px;
-    width:100%;
+    border-radius: 5px 10px 10px 5px;
+    width: 80px;
+    height: 80px;
   }
 
 .personal_wrapper {
-  display:flex;
-  justify-content: center;
-  flex-flow: row wrap;
-  width: 80em;
-  height: 80em;
+  display: flex;
+  justify-content: space-between;
+  flex-flow: row;
+  flex-basis: 20px;
+  width: 100%;
+  height: 100%;
   background-color: whitesmoke;
 }
 
