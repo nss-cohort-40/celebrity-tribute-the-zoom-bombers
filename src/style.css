@@ -1,7 +1,9 @@
 
 /* Quick Color Palet Access */
 /* (PINKISH) background-color: rgba(199, 161, 139, 1.4);  */
-/* (DeepGray) background-color:rgba(127,146, 164, 1.4); */
+/* (Deep Gray) background-color: rgba(91, 93, 95, 0.4); */
+ /* (Light Grey) background-color:rgba(127,146, 164, 1.4); */
+/* (BLUE)background-color: rgba(127,146, 164, 1.4); */
 
 .global {
     font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
@@ -40,20 +42,25 @@ div.centeredAlias {
     top: 84%;
     left: 41%;  
 }
-div.centeredColab {
+div.centeredCollab {
     position: absolute;
     top: 89%;
     left: 33%;
 }
+div.centeredImg {
+    position: absolute;
+    color: whitesmoke;
+    top: 89%;
+    left: 7%;
+}
 /* This is the Aliases Box Info */
-div.exSum__alias {
+div.exSum__aliases {
     float:right;
     margin-bottom: 5px;
-    background-color: rgba(127,146, 164, 0.4);
     width: 48%;
-    /* background-color: rgba(199, 161, 139, 1.4); */
+    background-color: rgba(127,146, 164, 0.4);
 }
-img.exSum__alias {
+img.exSum__aliases {
     max-width: 75%;
     height: auto;
     margin: 1em;
@@ -61,20 +68,17 @@ img.exSum__alias {
     margin-left: auto;
     margin-right: auto;
 }
-h2.exSum__alias {
+h2.exSum__aliases {
     font-size: 10px;
 }
 /* This is the Colaboration box into */
-div.exSum__colab {
+div.exSum__collab {
     float: right;
     width: 48%;
     margin-top: 5px;
-    /* background-color: rgba(148, 140, 133, 1.4); */
-    /* background-color: rgba(127,146, 164, 1.4) */
-    /* background-color: rgba(91, 93, 95, 0.4); */
     background-color: rgba(199, 161, 139, 0.4);
 }
-img.exSum__colab{
+img.exSum__collab{
     max-width: 82%;
     height: auto;
     margin: 1em;
@@ -82,63 +86,118 @@ img.exSum__colab{
     margin-left: auto;
     margin-right: auto;
 }
-h2.exSum__colab {
+h2.exSum__collab {
     font-size: 10px;
 }
-
 /* This to Stop the Float formated header  */
 .executiveSum--clearfix {
     clear: both;
 }
-
-/* This is where I started using Flexbox for Rows in Aliases Section */
+/* This is the bigBox container where I started using Flexbox for Rows in Aliases Section */
 .exSum__aliases_bigBox {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-    /* justify-content: space-between; */
+    border: 2px solid black;  
 }
-
+/* This is the first child of the bigBox container*/
 .aliases_one {
     display: flex;
-    justify-content: space-between;
-    /* background-color: rgba(91, 93, 95, 0.4);
-    border: 2px solid black; */
+    justify-content: space-evenly;
+    max-width: 100%;
     margin-bottom: 1em;
+    /* border: 2px solid black;  */
 }
 .aliases_one div {
-    background-color: rgba(91, 93, 95, 0.4);
+    background-color: rgba(127,146, 164, 0.4);
+    margin: .5em;
+    padding: .5em;
     /* border: 2px solid black; */
-    margin: 1em;
-
 }
-
+.aliases_one h1 {
+    color: black;
+    font-size: 10px;
+    text-align: center;
+}
+/* This is the second child of the bigBox  */
 .aliases_two {
     display: flex;
-    justify-content: ;
+    justify-content:space-evenly ;
     margin-bottom: 1em;
+    max-width: 100%;
 }
-
 .aliases_two div {
-    background-color: rgba(91, 93, 95, 0.4);
-    border: 2px solid black;
+    background-color: rgba(127,146, 164, 0.4);
     margin: 1em;
     padding: 1em;
+    max-width: 50%;
+    /* border: 2px solid black; */
 }
-
-
+.aliases_two h1 {
+    color: black;
+    font-size: 10px;
+    text-align: center;
+}
+/* Here are all the styleings of the IMAGES for Aliases Section  */
 img.exSum__aliases_ziggyStardust {
-    max-width: 60%
+    max-width: 250px;
 }
 img.exSum__aliases_aladdinSane {
-    max-width: 20%
+    max-width: 250px;
 }
 img.exSum__aliases_theThinWhiteDuke {
-    max-width: 20%
+    max-width: 250px;
 }
 img.exSum__aliases_theGoblinKing {
-    max-width: 20%
+    max-width: 300px;
 }
 img.exSum__aliases_theBlindProphet {
-    max-width: 20%
+    max-width: 300px;
+    height: 200px;
+}
+/* THIS IS THE COLLABORATION SECTION  */
+/* This is the bigBox container where I started using Flexbox for Rows in Aliases Section */
+.exSum__collaborations_bigBox {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;  
+    border: 2px solid black;
+}
+/* This is the first child of the bigBox container*/
+.collaborations_one {
+    display: flex;
+    justify-content: space-evenly;
+    max-width: 100%;
+    margin-bottom: 1em;
+    /* border: 2px solid black;  */
+}
+.collaborations_one div {
+    background-color: rgba(199, 161, 139, 0.4);
+    margin: .5em;
+    padding: .5em;
+    /* border: 2px solid black; */
+}
+.collaborations_one h1 {
+    color: black;
+    font-size: 10px;
+    text-align: center;
+}
+/* This is the second child of the bigBox  */
+.collaborations_two {
+    display: flex;
+    justify-content:space-evenly ;
+    margin-bottom: 1em;
+    max-width: 100%;
+}
+.collaborations_two div {
+    background-color: rgba(199, 161, 139, 0.4);
+    margin: 1em;
+    padding: 1em;
+    max-width: 50%;
+    /* border: 2px solid black; */
+}
+.collaborations_two h1 {
+    color: black;
+    font-size: 10px;
+    text-align: center;
 }
