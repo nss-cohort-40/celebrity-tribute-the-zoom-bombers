@@ -1,6 +1,4 @@
-body {
-  background-color: whitesmoke;
-}
+
 .global {
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
     Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
@@ -50,6 +48,196 @@ div.career.places {
   display: flex;
   flex-direction: column;
   width: 49%;
+}
+
+
+/* This divides all major sections with an underline and shadow */
+.executiveSum--underline {
+    border-bottom: 4px solid black;
+    box-shadow: 0 10px 6px -6px #777;
+}
+/* This gives universal bakground color and margin */
+.executiveSum--margin {
+    background-color: whitesmoke;
+    width: 40em;
+}
+/* This is the David Bowie intro Box */
+div.exSum__img {
+    float: left;
+    width: 48%; 
+}
+img.exSum__img {
+    max-width: 100%;
+    height: auto;
+}
+/* These are the commands for Floating the Intro Section */
+.containerExSum {
+    position: relative;
+    text-align: center;  
+}
+div.centeredAlias {
+    position: absolute;
+    top: 84%;
+    left: 41%;  
+}
+div.centeredCollab {
+    position: absolute;
+    top: 89%;
+    left: 33%;
+}
+div.centeredImg {
+    position: absolute;
+    color: whitesmoke;
+    top: 89%;
+    left: 7%;
+}
+/* This is the Aliases Box Info */
+div.exSum__aliases {
+    float:right;
+    margin-bottom: 5px;
+    width: 48%;
+    background-color: rgba(127,146, 164, 0.4);
+}
+img.exSum__aliases {
+    max-width: 75%;
+    height: auto;
+    margin: 1em;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+h2.exSum__aliases {
+    font-size: 10px;
+}
+/* This is the Colaboration box into */
+div.exSum__collab {
+    float: right;
+    width: 48%;
+    margin-top: 5px;
+    background-color: rgba(199, 161, 139, 0.4);
+}
+img.exSum__collab{
+    max-width: 82%;
+    height: auto;
+    margin: 1em;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+h2.exSum__collab {
+    font-size: 10px;
+}
+/* This to Stop the Float formated header  */
+.executiveSum--clearfix {
+    clear: both;
+}
+/* This is the bigBox container where I started using Flexbox for Rows in Aliases Section */
+.exSum__aliases_bigBox {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    border: 2px solid black;  
+}
+/* This is the first child of the bigBox container*/
+.aliases_one {
+    display: flex;
+    justify-content: space-evenly;
+    max-width: 100%;
+    margin-bottom: 1em;
+    /* border: 2px solid black;  */
+}
+.aliases_one div {
+    background-color: rgba(127,146, 164, 0.4);
+    margin: .5em;
+    padding: .5em;
+    /* border: 2px solid black; */
+}
+.aliases_one h1 {
+    color: black;
+    font-size: 10px;
+    text-align: center;
+}
+/* This is the second child of the bigBox  */
+.aliases_two {
+    display: flex;
+    justify-content:space-evenly ;
+    margin-bottom: 1em;
+    max-width: 100%;
+}
+.aliases_two div {
+    background-color: rgba(127,146, 164, 0.4);
+    margin: 1em;
+    padding: 1em;
+    max-width: 50%;
+    /* border: 2px solid black; */
+}
+.aliases_two h1 {
+    color: black;
+    font-size: 10px;
+    text-align: center;
+}
+/* Here are all the styleings of the IMAGES for Aliases Section  */
+img.exSum__aliases_ziggyStardust {
+    max-width: 250px;
+}
+img.exSum__aliases_aladdinSane {
+    max-width: 250px;
+}
+img.exSum__aliases_theThinWhiteDuke {
+    max-width: 250px;
+}
+img.exSum__aliases_theGoblinKing {
+    max-width: 300px;
+}
+img.exSum__aliases_theBlindProphet {
+    max-width: 300px;
+    height: 200px;
+}
+/* THIS IS THE COLLABORATION SECTION  */
+/* This is the bigBox container where I started using Flexbox for Rows in Aliases Section */
+.exSum__collaborations_bigBox {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;  
+    border: 2px solid black;
+}
+/* This is the first child of the bigBox container*/
+.collaborations_one {
+    display: flex;
+    justify-content: space-evenly;
+    max-width: 100%;
+    margin-bottom: 1em;
+    /* border: 2px solid black;  */
+}
+.collaborations_one div {
+    background-color: rgba(199, 161, 139, 0.4);
+    margin: .5em;
+    padding: .5em;
+    /* border: 2px solid black; */
+}
+.collaborations_one h1 {
+    color: black;
+    font-size: 10px;
+    text-align: center;
+}
+/* This is the second child of the bigBox  */
+.collaborations_two {
+    display: flex;
+    justify-content:space-evenly ;
+    margin-bottom: 1em;
+    max-width: 100%;
+}
+.collaborations_two div {
+    background-color: rgba(199, 161, 139, 0.4);
+    margin: 1em;
+    padding: 1em;
+    max-width: 50%;
+    /* border: 2px solid black; */
+}
+.collaborations_two h1 {
+    color: black;
+    font-size: 10px;
+    text-align: center;
 }
 ul.career {
   list-style: none;
@@ -118,10 +306,6 @@ body {
     left: 0;
     z-index: 0;
 }
-.nav-item a {
-    text-decoration: none;
-    color: white;
-}
 .nav-item {
     text-decoration: none;
     display: block;
@@ -143,7 +327,7 @@ body {
     min-height: 100%;
     /* background-image: url(https://s3-eu-central-1.amazonaws.com/centaur-wp/creativereview/prod/content/uploads/2015/11/Blackstar-grid.png);
     background-repeat: repeat-y; */
-    background-color: rgb(244, 242, 242);
+    background-color: whitesmoke;
     position: relative;
     top: 0;
     bottom: 100%;
@@ -178,6 +362,18 @@ label[for="nav-trigger"] {
 .nav-trigger + label, .site-wrap {
     transition: left 0.2s;
 }
+/* Example content for page-name class container*/
+.page-name {
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: center;
+    align-items: center;
+}
+.page-name .container {
+    width: 60em;
+}
+/* THis is the style information for news-feed.htm;  */
+
 .news-feed {
     width: 40em;
     display: flex;
