@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 .global  {
     font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
     margin-top: 6em;
@@ -241,6 +242,105 @@ section {
     background: #125688;
     color: white;
   }
+=======
+body {
+  background-color: whitesmoke;
+}
+.global {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
+    Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  margin-top: 6em;
+  margin-left: 22em;
+  margin-right: 22em;
+}
+div.career.position {
+  display: flex;
+  justify-content: center;
+}
+div.global.career {
+  width: 65em;
+}
+h1.career {
+  border-bottom: solid;
+  border-radius: 0;
+}
+div.career.intro {
+  background-color: rgba(199, 161, 139, 1);
+  padding: 0.05em 0 1em 1em;
+  margin-bottom: 1em;
+}
+div.career.skillsplaces {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin-top: 5em;
+  margin-bottom: 5em;
+}
+div.career.skills {
+  display: flex;
+  flex-direction: column;
+  justify-content: right;
+  width: 49%;
+}
+div.career.divideline {
+  border-right: solid 6px rgba(127, 146, 164, 1);
+  border-left: solid 6px rgba(127, 146, 164, 1);
+  background-color: rgba(127, 146, 164, 1);
+  margin: 0 1em 0 1em;
+  padding: 0;
+  width: 0%;
+}
+div.career.places {
+  padding-left: 0em;
+  display: flex;
+  flex-direction: column;
+  width: 49%;
+}
+ul.career {
+  list-style: none;
+  margin-block-start: 0;
+  padding-inline-start: 0;
+}
+li.career.divided {
+  background-color: rgba(91, 93, 95, .8);
+  padding: 1em;
+  margin-bottom: 1em;
+  justify-self: center;
+}
+ul.career.works {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+h3.career.works {
+  text-align: center;
+  margin-bottom: 0;
+}
+img.career.works {
+  width: 188px;
+  align-self: center;
+}
+li.career.works {
+  background-color: rgba(148, 140, 133, 1);
+  margin-top: 1em;
+  display: flex;
+  flex-direction: column;
+  padding: 1em;
+  width: 18em;
+}
+p.career.works {
+  padding: 1em;
+}
+.career {
+  border-radius: 0.5em;
+}
+/* rgba(127, 146, 164, 1) */
+/* rgba(91, 93, 95, 1) */
+/* rgba(199, 161, 139, 1) */
+/* rgba(148, 140, 133, 1) */
+
+>>>>>>> 55c72483603759c70c9ac74f648ac97d05267cd2
 body {
     margin: 0;
     padding: 0;
