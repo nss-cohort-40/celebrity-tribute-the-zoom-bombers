@@ -5,31 +5,28 @@
     margin-right: 22em;
 }
 
-/* @import url(https://fonts.googleapis.com/css?family=Open+Sans:400,500,300,700);
-
-* {
-  font-family: Open Sans;
-} */
 
 section {
-  width: 100%;
-  display: inline-block;
-  background: #333;
-  height: 50vh;
-  text-align: center;
-  font-size: 22px;
-  font-weight: 700;
-  text-decoration: underline;
-}
+    width: 100%;
+    display: inline-block;
+    background: #333;
+    height: 50vh;
+    text-align: center;
+    font-size: 22px;
+    font-weight: 700;
+    text-decoration: underline;
+  }
+
 
 .footer-distributed{
-	background: #7F92A4;
+	background: rgba(45, 1, 1, 0.632);
 	box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.12);
 	box-sizing: border-box;
-	width: 100%;
+    width: 100%;
 	text-align: left;
 	font: bold 16px sans-serif;
 	padding: 55px 50px;
+    
 }
 
 .footer-distributed .footer-left,
@@ -54,7 +51,7 @@ section {
 }
 
 .footer-distributed h3 span{
-	color:  rgb(184, 62, 62);
+	color:  rgb(224, 110, 110);
 }
 
 /* Footer links */
@@ -87,7 +84,7 @@ section {
 }
 
 .footer-distributed .footer-center i{
-	background-color:  #33383b;
+	background-color:  rgba(199, 161, 139, 0.4);
 	color: #ffffff;
 	font-size: 25px;
 	width: 38px;
@@ -145,17 +142,17 @@ section {
 }
 
 .footer-distributed .footer-company-about{
-	line-height: 20px;
+    line-height: 20px;
 	color:  #ffffff;
-	font-size: 16px;
+	font-size: 15px;
 	font-weight: normal;
-	margin: 0;
+    margin-left:20px;
 }
 
 .footer-distributed .footer-company-about span{
 	display: block;
 	color:  #ffffff;
-	font-size: 20px;
+	font-size: 18px;
 	font-weight: bold;
 	margin-bottom: 20px;
 }
@@ -245,13 +242,6 @@ body {
   background-color: whitesmoke;
 }
 
-.global {
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
-    Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
-  margin-top: 6em;
-  margin-left: 22em;
-  margin-right: 22em;
-}
 div.career.position {
   display: flex;
   justify-content: center;
@@ -722,25 +712,32 @@ label[for="nav-trigger"] {
 }
 .page-name .container {
     width: 60em;
+    text-align: center;
+    padding: 10px 20px;
 }
 
-/* Personal CSS */
+.news-feed .content-textbox .hashes {
+    margin: 1em;
+    font-size: 14pt;
+}
+
+/* Personal CSS! */
+
 .per_card {
     /* Add shadows to create the "card" effect */
     box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
     transition: 0.3s;
-    border-radius: 5px;
-    width:50em;
-    height:50em;
-    shape-rendering: crispEdges;
-    flex: 0px;
-    align-items: center;
-    position: relative;
-    letter-spacing: 0.01em;
-    margin-top: 0;
+    border-radius: 8px;
+    background: whitesmoke;
+	box-sizing: border-box;
+    width: 30em;
+    height: 25em;
+	font: bold 18px sans-serif;
+    padding-bottom: 2em;
+    justify-content: space-evenly;
+    
+    
   }
-
-  
   
   /* On mouse-over, add a deeper shadow */
   .per_card:hover {
@@ -749,41 +746,43 @@ label[for="nav-trigger"] {
   
   /* Add some padding inside the card container */
   .per_container {
-    padding: 40px 20px;
-    margin-right: 20px;
-    margin-left: 20px;
-    height: 100%;
-    max-width: 100%;
-    max-width: 100%;
-    width: 80%;
-    text-align: center;
-    justify-content: center;
-    position: absolute;
+    margin-bottom: 4em;
+    margin-top: 1em;
+    margin-left: 1em;
+    margin-right: 1em; 
+    border-radius: 2em;
+    
   }
 
   .per_img {
-    border-radius: 5px 10px 10px 5px;
-    max-width: 50%;
-    max-height: 50%;
-    left: 0;
-    top: 20px;
-    margin-right: 20px;
-    margin-left: 20px;
+    max-width: 100%;
+    height: auto;
+    display: flex;
+    flex-flow: wrap;
+    margin-left: 5em;
+    margin-right: 5em; 
+    margin-top: 2em;
+    margin-bottom: 2em;
+    justify-content: center;
   }
 
 .personal_wrapper {
+  margin: 20px 50px 70px 80px;
+  margin-bottom: 20em;
   display: flex;
-  max-block-size: 50%;
-  justify-content: space-between;
-  flex-flow: row;
-  flex-basis: 20px;
-  max-width: 70%;
-  max-height: 50%;
-  background-color: whitesmoke;
+  flex-flow: column wrap;
+  justify-content: center;
+  align-items: center;
+  
 }
 
-
-.news-feed .content-textbox .hashes {
-    margin: 1em;
-    font-size: 14pt;
+.per_column {
+    padding: 2px 4px 2px 4px;
 }
+
+ /*  .per_row {
+    padding: 2px;
+    display: table;
+    justify-content: space-between;
+    
+  } */
